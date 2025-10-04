@@ -25,7 +25,7 @@ prompt = st.text_area("💬 프롬프트 입력", placeholder="예: 한국의 �
 
 # --- 옵션 설정 ---
 with st.expander("⚙️ 고급 설정"):
-    model_name = st.selectbox("모델 선택", ["gemini-1.5-flash-latest", "gemini-1.5-pro-latest"])
+    model_name = "gemini-1.5-pro-latest"
     temperature = st.slider("창의성 (temperature)", 0.0, 1.0, 0.7, 0.1)
     max_tokens = st.number_input("최대 출력 토큰 수", 100, 2048, 512)
 
